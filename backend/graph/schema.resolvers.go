@@ -11,7 +11,11 @@ import (
 	"github.com/hlubek/graphql-multischema-experiment/backend/graph/model"
 )
 
-func (r *mutationResolver) CreateTodo(ctx context.Context, input model.NewTodo) (*model.Todo, error) {
+func (r *mutationResolver) UpdateTodo(ctx context.Context, input model.UpdateTodo) (*model.Result, error) {
+	panic(fmt.Errorf("not implemented"))
+}
+
+func (r *mutationResolver) DeleteTodo(ctx context.Context, id string) (*model.Result, error) {
 	panic(fmt.Errorf("not implemented"))
 }
 

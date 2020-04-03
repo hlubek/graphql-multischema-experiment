@@ -2,9 +2,8 @@
 
 package model
 
-type NewTodo struct {
-	Text   string `json:"text"`
-	UserID string `json:"userId"`
+type Result struct {
+	Error *string `json:"error"`
 }
 
 type Todo struct {
@@ -12,6 +11,10 @@ type Todo struct {
 	Text string `json:"text"`
 	Done bool   `json:"done"`
 	User *User  `json:"user"`
+}
+
+type UpdateTodo struct {
+	Text string `json:"text"`
 }
 
 type User struct {
